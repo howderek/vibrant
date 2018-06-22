@@ -1,6 +1,6 @@
 set __fish_git_prompt_color_branch blue
 
-set __fish_git_prompt_char_upstream_prefix ''
+set __fish_git_prompt_char_upstream_prefix ' '
 set __fish_git_prompt_char_stateseparator ''
 
 set __fish_git_prompt_show_informative_status true
@@ -31,7 +31,7 @@ set _vbr_yellow  (set_color yellow)
 set _vbr_red     (set_color red)
 set _vbr_blue    (set_color blue)
 set _vbr_green   (set_color green)
-set _vbr_gray    (set_color 777)
+set _vbr_gray    (set_color 999)
 
 
 
