@@ -49,9 +49,6 @@ function fish_prompt
 		set prompt $prompt $_vbr_yellow$USER$_vbr_gray'@'$_vbr_cyan$host
 	end
 
-	# path
-	set prompt $prompt $_vbr_gray(pwd | sed "s:^$HOME:~:")
-
 	# Git
 	set prompt $prompt (__fish_git_prompt '%s')
 
@@ -61,4 +58,12 @@ function fish_prompt
 	end
 
 	echo -n $prompt (set_color normal)
+end
+
+function fish_right_prompt
+	# path
+	set -l prompt ''
+	set -e prompt[1]
+	set prompt $prompt $_vbr_gray(pwd | sed "s:^$HOME:~:")
+	echo -n $prompt
 end
