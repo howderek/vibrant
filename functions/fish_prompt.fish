@@ -53,8 +53,8 @@ function fish_prompt
 	set prompt $prompt (__fish_git_prompt '%s')
 
 	# prompt symbol
-	if [ $exit_code != 0 ]; set prompt $prompt $_vbr_red' λ'
-	else;                   set prompt $prompt $_vbr_green' λ'
+	if [ $exit_code != 0 ]; set prompt $prompt $_vbr_red'λ'
+	else;                   set prompt $prompt $_vbr_green'λ'
 	end
 
 	echo -n $prompt (set_color normal)
